@@ -1,3 +1,29 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+<ion-menu contentId="main" menuId="m1" side="start">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Ionic Test</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item button [routerLink]="['/main']">
+            <ion-label>Home</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['/product-list']">
+            <ion-label>Lista de productos</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+
+
+
 </ion-app>
+
+
